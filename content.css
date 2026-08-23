@@ -67,6 +67,7 @@
 
 article:hover .igfs-toggle-btn,
 div[role="dialog"]:hover .igfs-toggle-btn,
+[data-igfs-standalone-card]:hover .igfs-toggle-btn,
 .igfs-toggle-btn:focus-visible {
   opacity: 1;
   pointer-events: auto;
@@ -188,6 +189,7 @@ div[role="dialog"]:hover .igfs-toggle-btn,
 
 article:hover .igfs-control-btn,
 div[role="dialog"]:hover .igfs-control-btn,
+[data-igfs-standalone-card]:hover .igfs-control-btn,
 .igfs-control-btn:focus-visible {
   opacity: 1;
   pointer-events: auto;
