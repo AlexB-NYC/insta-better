@@ -61,7 +61,9 @@ assert.strictEqual(h.isProgressiveHttpsUrl('https://www.instagram.com/'), false)
 assert.strictEqual(h.isInstagramCdnHost('instagram.test-region.fna.fbcdn.net'), true);
 assert.strictEqual(h.isInstagramCdnHost('evilfbcdn.net.example.com'), false);
 assert.strictEqual(h.parsePostPermalinkPath('/p/ABC/?x=1'), '/p/ABC/');
+assert.strictEqual(h.parsePostPermalinkPath('/account/p/ABC/'), '/p/ABC/');
 assert.strictEqual(h.parsePostPermalinkPath('/reel/ABC/'), '/reel/ABC/');
+assert.strictEqual(h.parsePostPermalinkPath('/account/reel/ABC/'), '/reel/ABC/');
 assert.strictEqual(h.parsePostPermalinkPath('/reels/ABC/'), '/reels/ABC/');
 assert.strictEqual(h.parsePostPermalinkPath('unknown'), null);
 
